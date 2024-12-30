@@ -39,7 +39,7 @@ export const LanguageProvider = ({
 
   useEffect(() => {
     loadMessages(currentLocale).then(setMessages);
-  }, [currentLocale, loadMessages]);
+  }, [currentLocale]);
 
   const translate = (key: string): string | undefined => {
     const keys = key.split('.'); // 按 `.` 分割
